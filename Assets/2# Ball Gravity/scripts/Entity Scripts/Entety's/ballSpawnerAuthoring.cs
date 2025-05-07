@@ -37,6 +37,7 @@ public class ballSpawnBaker : Baker<ballSpawnerAuthoring>
         };
         AddComponent(entity, spawner);
 
+      
     }
 
 }
