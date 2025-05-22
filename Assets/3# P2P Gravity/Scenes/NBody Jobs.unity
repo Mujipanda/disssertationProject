@@ -132,7 +132,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 168875118}
-  - component: {fileID: 168875117}
   - component: {fileID: 168875116}
   m_Layer: 0
   m_Name: Spawner
@@ -161,27 +160,6 @@ MonoBehaviour:
   simBounds: {x: 2, y: 2, z: 2}
   massRange: {x: 0.01, y: 0.01}
   ballSizeRange: {x: 0.01, y: 0.01}
---- !u!114 &168875117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168875115}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30da3f35c0d701340a4393c0ca5e962f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballPrefab: {fileID: 5022989835364553765, guid: 5fdb16c7e645ceb41ad06ab651e1fe83,
-    type: 3}
-  numOfBalls: 10000
-  Bounds: {x: 2, y: 2}
-  ballSizeRange: {x: 0.01, y: 0.01}
-  GravityCentre: {fileID: 0}
-  GravityStrength: 0.1
-  simBounds: {x: 2, y: 2, z: 2}
-  centreRadius: 0.2
 --- !u!4 &168875118
 Transform:
   m_ObjectHideFlags: 0
@@ -411,7 +389,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1745508978}
-  - component: {fileID: 1745508977}
+  - component: {fileID: 1745508979}
+  - component: {fileID: 1745508980}
   m_Layer: 0
   m_Name: NBody Sim
   m_TagString: Untagged
@@ -419,18 +398,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1745508977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745508976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4ab0280b1db2ed4397ac22808864f2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1745508978
 Transform:
   m_ObjectHideFlags: 0
@@ -446,6 +413,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1745508979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745508976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7245e549b4437a041ba41bad9b9d953e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1745508980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1745508976}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ab0280b1db2ed4397ac22808864f2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1955979951
 PrefabInstance:
   m_ObjectHideFlags: 0

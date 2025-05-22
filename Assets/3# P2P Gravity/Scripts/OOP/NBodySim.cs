@@ -28,7 +28,7 @@ public class NBodySim : MonoBehaviour
             {
                 if (i == j) continue;
                 Vector3 pos2 = NBodySimSpawner.ballTransforms[j].position;
-                Vector3 dif = pos1 - pos2;
+                Vector3 dif = pos2 - pos1;
                  
                 float dist = dif.sqrMagnitude + 0.1f;
 
@@ -56,6 +56,7 @@ public class NBodySim : MonoBehaviour
             else if (pos.z < -bounds.z) { vel.z *= -1f; pos.z = -bounds.z; }
 
             NBodySimSpawner.ballTransforms[i].position += vel * Time.deltaTime;
+            NBodySimSpawner.ballVelocities[i] = vel;
         }
       
     }
