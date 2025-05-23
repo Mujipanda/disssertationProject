@@ -1,18 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using Unity.Entities;
 
-public class NBodyBallTag : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public struct NBodyBallTag : IComponentData { }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+

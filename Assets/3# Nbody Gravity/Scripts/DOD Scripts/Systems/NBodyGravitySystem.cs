@@ -2,15 +2,13 @@ using Unity.Entities;
 using Unity.Transforms;
 using Unity.Mathematics;
 using Unity.Collections;
-using UnityEngine;
-using UnityEditor.VersionControl;
-using UnityEngine.UIElements;
 
 partial struct NBodyGravitySystem : ISystem
 {
     public void OnCreate(ref SystemState state) 
     {
         state.RequireForUpdate<NBodyGravityCompData>();
+        state.RequireForUpdate<NBodyNoJobSceneTag>();
     }
 
     public void OnUpdate(ref SystemState state)
@@ -33,7 +31,7 @@ partial struct NBodyGravitySystem : ISystem
         var newVel = new NativeArray<float3>(entityCount, Allocator.Temp);
 
         int index = 0;
-        foreach (var (transform, balldata, entity) in SystemAPI.Query<RefRW<LocalTransform>, RefRW<NBodyBallCompData>>().WithEntityAccess())
+        foreach (var (transform, balldata, entity) in SystemAPI.Query<RefRW<LocalTransform>, RefRW<NBodyBallCompData>>().WithAll<NBodyBallTag>().WithEntityAccess())
         {
             ballPos[index] = transform.ValueRO.Position;
             ballVel[index] = balldata.ValueRO.ballVelocity;
@@ -80,7 +78,7 @@ partial struct NBodyGravitySystem : ISystem
         }
 
         int index2 = 0;
-        foreach (var (transform, balldata, entity) in SystemAPI.Query<RefRW<LocalTransform>, RefRW<NBodyBallCompData>>().WithEntityAccess())
+        foreach (var (transform, balldata, entity) in SystemAPI.Query<RefRW<LocalTransform>, RefRW<NBodyBallCompData>>().WithAll<NBodyBallTag>().WithEntityAccess())
         {
             transform.ValueRW.Position = newPos[index2];
             balldata.ValueRW.ballVelocity = newVel[index2];
