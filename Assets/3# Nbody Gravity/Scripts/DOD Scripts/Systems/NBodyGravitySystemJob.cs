@@ -3,6 +3,7 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
 using Unity.Transforms;
+using UnityEngine.ProBuilder.MeshOperations;
 
 partial struct NBodyGravitySystemJob : ISystem
 {
@@ -68,17 +69,17 @@ partial struct NBodyGravitySystemJob : ISystem
             index2++;
 
         }
-        ballPos.Dispose();
-        ballVel.Dispose();
-        ballMass.Dispose();
-        newPos.Dispose();
-        newVel.Dispose();
+        ballPos.Dispose(JobHandle);
+        ballVel.Dispose(JobHandle);
+        ballMass.Dispose(JobHandle);
+        newPos.Dispose(JobHandle);
+        newVel.Dispose(JobHandle);
     }
 
 
 
     public void OnDestroy(ref SystemState state)
     {
-        
+    
     }
 }

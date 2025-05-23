@@ -59,5 +59,6 @@ public partial struct NBodyGravityIjob : IJobParallelFor
 
         newPos[i] = pos;
         newVel[i] = vel;
+
     }
 }
