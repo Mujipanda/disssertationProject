@@ -9,27 +9,27 @@ EditorBuildSettings:
     path: Assets/# MainMenu/MainMenu.unity
     guid: 928723a09f424bb4ea4ffd404eef2f46
   - enabled: 1
-    path: Assets/2# Planet Gravity/Scenes/Ball Colisions No jobs.unity
+    path: Assets/1# Planet Gravity/Scenes/Ball Colisions No jobs.unity
     guid: 5e0caf46c026754429b8ec84fd106403
   - enabled: 1
-    path: Assets/2# Planet Gravity/Scenes/Ball Colisions jobs.unity
+    path: Assets/1# Planet Gravity/Scenes/Ball Colisions jobs.unity
     guid: 7c97a7de994909b4fa2dc0887e61fcc5
   - enabled: 1
-    path: Assets/2# Planet Gravity/Scenes/Ball Colisions Entity no Jobs.unity
+    path: Assets/1# Planet Gravity/Scenes/Ball Colisions Entity no Jobs.unity
     guid: 299b2effa27b05b49a0348acf3a86bd4
   - enabled: 1
-    path: Assets/2# Planet Gravity/Scenes/Ball Colisions Entity Jobs.unity
+    path: Assets/1# Planet Gravity/Scenes/Ball Colisions Entity Jobs.unity
     guid: 7a6cd6494061de24eac4680923818712
   - enabled: 1
-    path: Assets/3# Nbody Gravity/Scenes/NBody No Jobs.unity
+    path: Assets/2# Nbody Gravity/Scenes/NBody No Jobs.unity
     guid: 63aafde11f0af844ba156561049ed8f4
   - enabled: 1
-    path: Assets/3# Nbody Gravity/Scenes/NBody Jobs.unity
+    path: Assets/2# Nbody Gravity/Scenes/NBody Jobs.unity
     guid: 03147663540f8e242a89a97f997a3c33
   - enabled: 1
-    path: Assets/3# Nbody Gravity/Scenes/NBody Entity Jobs.unity
+    path: Assets/2# Nbody Gravity/Scenes/NBody Entity Jobs.unity
     guid: 7c7189426dd119f4e9127d7c0db1f7e5
   - enabled: 1
-    path: Assets/3# Nbody Gravity/Scenes/NBody Entity No Jobs.unity
+    path: Assets/2# Nbody Gravity/Scenes/NBody Entity No Jobs.unity
     guid: e875636c46a550e42bd7e8af762b554c
   m_configObjects: {}
